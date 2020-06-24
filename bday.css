@@ -1,0 +1,65 @@
+
+body{
+    background: #f5d9d5;
+    font-family: 'Metal Mania', cursive;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+    }
+}
+.bg-success{
+    background-color: transparent!important;
+}
+.colorName{
+    color: #FF5733;
+}
+.hap{
+    color: #10C5FA;
+}
+.btn{
+    color: rosybrown !important;
+}
+i{
+    color: #e31b23;
+}
+.cake{
+    color: #e31b45;
+}
+.fire{
+    color: #FF5733;
+}
+.btn { 
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+.head{	
+	border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(237, 110, 160), rgba(237, 110, 110, 0.75), #ec8c69);
+	margin: 0px;
+}
+.title{
+	background: linear-gradient(to right, #ed6ea0 0, #ec8c69 100%);
+	margin: 0px auto;
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	bottom: -26px;
+	-webkit-clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0);
+	clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0)
+}
+

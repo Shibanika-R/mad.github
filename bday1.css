@@ -1,0 +1,84 @@
+body{
+    background: #f5d9d5;
+    font-family: 'Metal Mania', cursive;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+    }
+}
+.paw{
+	color: #cea18b;
+}
+.bg-success{
+	background-color: transparent !important;
+}
+
+.head{	
+	border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #cea18b, rgba(237, 110, 110, 0.75), #cea18b);
+	margin: 0px;
+}
+.title{
+	background: linear-gradient(to right, #cea18b 0, #ec8c69 100%);
+	margin: 0px auto;
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	bottom: -26px;
+	-webkit-clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0);
+	clip-path: polygon(75% 0, 75% 69%, 41% 93%, 0 68%, 0 0)
+}
+.btn { 
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+#zoomIn{
+	overflow: hidden !important;
+}
+#zoomIn img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#zoomIn:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#zoomIn .details {
+	position: absolute;		
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	opacity: 0;
+	transition: all 0.8s ease;
+	margin: 0;		
+	color: #cea18b;			
+}
+
+#zoomIn:hover .details {
+	opacity: 1;
+
+}
+/* .column#caption:hover img {
+-webkit-filter: sepia(90%);
+}*/
